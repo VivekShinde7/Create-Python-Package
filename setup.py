@@ -19,8 +19,8 @@ with open('README.md', 'r', encoding='utf-8') as f:
    
 
 __version__ = "0.0.6"
-REPO_NAME = "Create-Python-Package"
-PKG_NAME= "MongoConnect"
+REPO_NAME = "create-python-package"
+PKG_NAME= "mongoDBAutomation"
 AUTHOR_USER_NAME = "VivekShinde7"
 AUTHOR_EMAIL = "vivushinde09@gmail.com"
 

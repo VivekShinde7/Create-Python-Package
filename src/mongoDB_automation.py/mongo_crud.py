@@ -53,11 +53,11 @@ class mongo_operation:
         self.path=datafile
         
         if self.path.endswith('.csv'):
-            pd.read.csv(self.path,encoding='utf-8')
+             data=pd.read.csv(self.path,encoding='utf-8')
             
         elif self.path.endswith(".xlsx"):
-            dataframe=pd.read_excel(self.path,encoding='utf-8')
+            data=pd.read_excel(self.path,encoding='utf-8')
             
-        datajson=json.loads(dataframe.to_json(orient='record'))
+        datajson=json.loads(data.to_json(orient='record'))
         collection=self.create_collection()
         collection.insert_many(datajson)
